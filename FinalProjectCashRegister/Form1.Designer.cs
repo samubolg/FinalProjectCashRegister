@@ -61,6 +61,7 @@ namespace FinalProjectCashRegister
             this.doubbigmacButton = new System.Windows.Forms.Button();
             this.doubquartcheeseButton = new System.Windows.Forms.Button();
             this.doubquartbltButton = new System.Windows.Forms.Button();
+            this.filetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // receiptLabel
@@ -70,7 +71,7 @@ namespace FinalProjectCashRegister
             this.receiptLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.receiptLabel.Font = new System.Drawing.Font("Consolas", 7F);
             this.receiptLabel.ForeColor = System.Drawing.Color.Black;
-            this.receiptLabel.Location = new System.Drawing.Point(561, 12);
+            this.receiptLabel.Location = new System.Drawing.Point(841, 17);
             this.receiptLabel.Name = "receiptLabel";
             this.receiptLabel.Size = new System.Drawing.Size(471, 666);
             this.receiptLabel.TabIndex = 0;
@@ -82,7 +83,7 @@ namespace FinalProjectCashRegister
             this.voidButton.BackColor = System.Drawing.Color.Gray;
             this.voidButton.FlatAppearance.BorderSize = 5;
             this.voidButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.voidButton.Location = new System.Drawing.Point(332, 12);
+            this.voidButton.Location = new System.Drawing.Point(612, 17);
             this.voidButton.Name = "voidButton";
             this.voidButton.Size = new System.Drawing.Size(218, 48);
             this.voidButton.TabIndex = 1;
@@ -95,7 +96,7 @@ namespace FinalProjectCashRegister
             // totalLabel
             // 
             this.totalLabel.Font = new System.Drawing.Font("Consolas", 8F);
-            this.totalLabel.Location = new System.Drawing.Point(327, 214);
+            this.totalLabel.Location = new System.Drawing.Point(607, 219);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(228, 23);
             this.totalLabel.TabIndex = 2;
@@ -104,7 +105,7 @@ namespace FinalProjectCashRegister
             // taxLabel
             // 
             this.taxLabel.Font = new System.Drawing.Font("Consolas", 8F);
-            this.taxLabel.Location = new System.Drawing.Point(327, 175);
+            this.taxLabel.Location = new System.Drawing.Point(607, 180);
             this.taxLabel.Name = "taxLabel";
             this.taxLabel.Size = new System.Drawing.Size(223, 23);
             this.taxLabel.TabIndex = 3;
@@ -113,7 +114,7 @@ namespace FinalProjectCashRegister
             // subtotalLabel
             // 
             this.subtotalLabel.Font = new System.Drawing.Font("Consolas", 8F);
-            this.subtotalLabel.Location = new System.Drawing.Point(327, 137);
+            this.subtotalLabel.Location = new System.Drawing.Point(607, 142);
             this.subtotalLabel.Name = "subtotalLabel";
             this.subtotalLabel.Size = new System.Drawing.Size(223, 23);
             this.subtotalLabel.TabIndex = 4;
@@ -124,7 +125,7 @@ namespace FinalProjectCashRegister
             this.totalButton.BackColor = System.Drawing.Color.Gray;
             this.totalButton.FlatAppearance.BorderSize = 5;
             this.totalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.totalButton.Location = new System.Drawing.Point(332, 81);
+            this.totalButton.Location = new System.Drawing.Point(612, 86);
             this.totalButton.Name = "totalButton";
             this.totalButton.Size = new System.Drawing.Size(213, 39);
             this.totalButton.TabIndex = 5;
@@ -134,14 +135,14 @@ namespace FinalProjectCashRegister
             // 
             // tenderedTextbox
             // 
-            this.tenderedTextbox.Location = new System.Drawing.Point(337, 327);
+            this.tenderedTextbox.Location = new System.Drawing.Point(617, 332);
             this.tenderedTextbox.Name = "tenderedTextbox";
             this.tenderedTextbox.Size = new System.Drawing.Size(213, 31);
             this.tenderedTextbox.TabIndex = 6;
             // 
             // tenderedLabel
             // 
-            this.tenderedLabel.Location = new System.Drawing.Point(337, 289);
+            this.tenderedLabel.Location = new System.Drawing.Point(617, 294);
             this.tenderedLabel.Name = "tenderedLabel";
             this.tenderedLabel.Size = new System.Drawing.Size(213, 23);
             this.tenderedLabel.TabIndex = 7;
@@ -151,7 +152,7 @@ namespace FinalProjectCashRegister
             // changeLabel
             // 
             this.changeLabel.Font = new System.Drawing.Font("Consolas", 8F);
-            this.changeLabel.Location = new System.Drawing.Point(337, 468);
+            this.changeLabel.Location = new System.Drawing.Point(617, 473);
             this.changeLabel.Name = "changeLabel";
             this.changeLabel.Size = new System.Drawing.Size(213, 23);
             this.changeLabel.TabIndex = 8;
@@ -163,7 +164,7 @@ namespace FinalProjectCashRegister
             this.printButton.Enabled = false;
             this.printButton.FlatAppearance.BorderSize = 5;
             this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printButton.Location = new System.Drawing.Point(337, 572);
+            this.printButton.Location = new System.Drawing.Point(617, 577);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(213, 44);
             this.printButton.TabIndex = 9;
@@ -179,7 +180,7 @@ namespace FinalProjectCashRegister
             this.mdrinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mdrinkButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mdrinkButton.ForeColor = System.Drawing.Color.Black;
-            this.mdrinkButton.Location = new System.Drawing.Point(221, 118);
+            this.mdrinkButton.Location = new System.Drawing.Point(501, 123);
             this.mdrinkButton.Name = "mdrinkButton";
             this.mdrinkButton.Size = new System.Drawing.Size(100, 100);
             this.mdrinkButton.TabIndex = 10;
@@ -195,7 +196,7 @@ namespace FinalProjectCashRegister
             this.ldrinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ldrinkButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ldrinkButton.ForeColor = System.Drawing.Color.Black;
-            this.ldrinkButton.Location = new System.Drawing.Point(221, 224);
+            this.ldrinkButton.Location = new System.Drawing.Point(501, 229);
             this.ldrinkButton.Name = "ldrinkButton";
             this.ldrinkButton.Size = new System.Drawing.Size(100, 100);
             this.ldrinkButton.TabIndex = 11;
@@ -211,7 +212,7 @@ namespace FinalProjectCashRegister
             this.sdrinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sdrinkButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sdrinkButton.ForeColor = System.Drawing.Color.Black;
-            this.sdrinkButton.Location = new System.Drawing.Point(221, 12);
+            this.sdrinkButton.Location = new System.Drawing.Point(501, 17);
             this.sdrinkButton.Name = "sdrinkButton";
             this.sdrinkButton.Size = new System.Drawing.Size(100, 100);
             this.sdrinkButton.TabIndex = 12;
@@ -224,7 +225,7 @@ namespace FinalProjectCashRegister
             this.changeButton.BackColor = System.Drawing.Color.Gray;
             this.changeButton.FlatAppearance.BorderSize = 5;
             this.changeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changeButton.Location = new System.Drawing.Point(337, 510);
+            this.changeButton.Location = new System.Drawing.Point(617, 515);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(213, 43);
             this.changeButton.TabIndex = 13;
@@ -235,7 +236,7 @@ namespace FinalProjectCashRegister
             // noNumbersLabel
             // 
             this.noNumbersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noNumbersLabel.Location = new System.Drawing.Point(337, 373);
+            this.noNumbersLabel.Location = new System.Drawing.Point(617, 378);
             this.noNumbersLabel.Name = "noNumbersLabel";
             this.noNumbersLabel.Size = new System.Drawing.Size(213, 77);
             this.noNumbersLabel.TabIndex = 14;
@@ -246,7 +247,7 @@ namespace FinalProjectCashRegister
             this.newOrderButton.BackColor = System.Drawing.Color.Gray;
             this.newOrderButton.FlatAppearance.BorderSize = 5;
             this.newOrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newOrderButton.Location = new System.Drawing.Point(337, 636);
+            this.newOrderButton.Location = new System.Drawing.Point(617, 641);
             this.newOrderButton.Name = "newOrderButton";
             this.newOrderButton.Size = new System.Drawing.Size(213, 42);
             this.newOrderButton.TabIndex = 15;
@@ -262,7 +263,7 @@ namespace FinalProjectCashRegister
             this.scoffeeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.scoffeeLabel.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoffeeLabel.ForeColor = System.Drawing.Color.Black;
-            this.scoffeeLabel.Location = new System.Drawing.Point(221, 330);
+            this.scoffeeLabel.Location = new System.Drawing.Point(501, 335);
             this.scoffeeLabel.Name = "scoffeeLabel";
             this.scoffeeLabel.Size = new System.Drawing.Size(100, 100);
             this.scoffeeLabel.TabIndex = 16;
@@ -278,7 +279,7 @@ namespace FinalProjectCashRegister
             this.mcoffeeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mcoffeeLabel.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mcoffeeLabel.ForeColor = System.Drawing.Color.Black;
-            this.mcoffeeLabel.Location = new System.Drawing.Point(221, 436);
+            this.mcoffeeLabel.Location = new System.Drawing.Point(501, 441);
             this.mcoffeeLabel.Name = "mcoffeeLabel";
             this.mcoffeeLabel.Size = new System.Drawing.Size(100, 100);
             this.mcoffeeLabel.TabIndex = 17;
@@ -294,7 +295,7 @@ namespace FinalProjectCashRegister
             this.mshakeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mshakeButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mshakeButton.ForeColor = System.Drawing.Color.Black;
-            this.mshakeButton.Location = new System.Drawing.Point(115, 118);
+            this.mshakeButton.Location = new System.Drawing.Point(395, 123);
             this.mshakeButton.Name = "mshakeButton";
             this.mshakeButton.Size = new System.Drawing.Size(100, 100);
             this.mshakeButton.TabIndex = 18;
@@ -310,7 +311,7 @@ namespace FinalProjectCashRegister
             this.lcoffeeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lcoffeeLabel.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lcoffeeLabel.ForeColor = System.Drawing.Color.Black;
-            this.lcoffeeLabel.Location = new System.Drawing.Point(221, 542);
+            this.lcoffeeLabel.Location = new System.Drawing.Point(501, 547);
             this.lcoffeeLabel.Name = "lcoffeeLabel";
             this.lcoffeeLabel.Size = new System.Drawing.Size(100, 100);
             this.lcoffeeLabel.TabIndex = 19;
@@ -326,7 +327,7 @@ namespace FinalProjectCashRegister
             this.sfriesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sfriesButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sfriesButton.ForeColor = System.Drawing.Color.Black;
-            this.sfriesButton.Location = new System.Drawing.Point(115, 330);
+            this.sfriesButton.Location = new System.Drawing.Point(395, 335);
             this.sfriesButton.Name = "sfriesButton";
             this.sfriesButton.Size = new System.Drawing.Size(100, 100);
             this.sfriesButton.TabIndex = 20;
@@ -342,7 +343,7 @@ namespace FinalProjectCashRegister
             this.lshakeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lshakeButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lshakeButton.ForeColor = System.Drawing.Color.Black;
-            this.lshakeButton.Location = new System.Drawing.Point(115, 224);
+            this.lshakeButton.Location = new System.Drawing.Point(395, 229);
             this.lshakeButton.Name = "lshakeButton";
             this.lshakeButton.Size = new System.Drawing.Size(100, 100);
             this.lshakeButton.TabIndex = 21;
@@ -358,7 +359,7 @@ namespace FinalProjectCashRegister
             this.sshakeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sshakeButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sshakeButton.ForeColor = System.Drawing.Color.Black;
-            this.sshakeButton.Location = new System.Drawing.Point(115, 12);
+            this.sshakeButton.Location = new System.Drawing.Point(395, 17);
             this.sshakeButton.Name = "sshakeButton";
             this.sshakeButton.Size = new System.Drawing.Size(100, 100);
             this.sshakeButton.TabIndex = 22;
@@ -374,7 +375,7 @@ namespace FinalProjectCashRegister
             this.lfriesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lfriesButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lfriesButton.ForeColor = System.Drawing.Color.Black;
-            this.lfriesButton.Location = new System.Drawing.Point(115, 542);
+            this.lfriesButton.Location = new System.Drawing.Point(395, 547);
             this.lfriesButton.Name = "lfriesButton";
             this.lfriesButton.Size = new System.Drawing.Size(100, 100);
             this.lfriesButton.TabIndex = 23;
@@ -390,7 +391,7 @@ namespace FinalProjectCashRegister
             this.mfriesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mfriesButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mfriesButton.ForeColor = System.Drawing.Color.Black;
-            this.mfriesButton.Location = new System.Drawing.Point(115, 436);
+            this.mfriesButton.Location = new System.Drawing.Point(395, 441);
             this.mfriesButton.Name = "mfriesButton";
             this.mfriesButton.Size = new System.Drawing.Size(100, 100);
             this.mfriesButton.TabIndex = 24;
@@ -406,7 +407,7 @@ namespace FinalProjectCashRegister
             this.bigmacButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bigmacButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigmacButton.ForeColor = System.Drawing.Color.Black;
-            this.bigmacButton.Location = new System.Drawing.Point(9, 12);
+            this.bigmacButton.Location = new System.Drawing.Point(289, 17);
             this.bigmacButton.Name = "bigmacButton";
             this.bigmacButton.Size = new System.Drawing.Size(100, 100);
             this.bigmacButton.TabIndex = 25;
@@ -422,7 +423,7 @@ namespace FinalProjectCashRegister
             this.quartcheeseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quartcheeseButton.Font = new System.Drawing.Font("Corbel Light", 6.7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quartcheeseButton.ForeColor = System.Drawing.Color.Black;
-            this.quartcheeseButton.Location = new System.Drawing.Point(9, 224);
+            this.quartcheeseButton.Location = new System.Drawing.Point(289, 229);
             this.quartcheeseButton.Name = "quartcheeseButton";
             this.quartcheeseButton.Size = new System.Drawing.Size(100, 100);
             this.quartcheeseButton.TabIndex = 26;
@@ -438,7 +439,7 @@ namespace FinalProjectCashRegister
             this.quartbltButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quartbltButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quartbltButton.ForeColor = System.Drawing.Color.Black;
-            this.quartbltButton.Location = new System.Drawing.Point(9, 436);
+            this.quartbltButton.Location = new System.Drawing.Point(289, 441);
             this.quartbltButton.Name = "quartbltButton";
             this.quartbltButton.Size = new System.Drawing.Size(100, 100);
             this.quartbltButton.TabIndex = 27;
@@ -454,7 +455,7 @@ namespace FinalProjectCashRegister
             this.doubbigmacButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.doubbigmacButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doubbigmacButton.ForeColor = System.Drawing.Color.Black;
-            this.doubbigmacButton.Location = new System.Drawing.Point(9, 118);
+            this.doubbigmacButton.Location = new System.Drawing.Point(289, 123);
             this.doubbigmacButton.Name = "doubbigmacButton";
             this.doubbigmacButton.Size = new System.Drawing.Size(100, 100);
             this.doubbigmacButton.TabIndex = 28;
@@ -470,7 +471,7 @@ namespace FinalProjectCashRegister
             this.doubquartcheeseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.doubquartcheeseButton.Font = new System.Drawing.Font("Corbel Light", 5.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doubquartcheeseButton.ForeColor = System.Drawing.Color.Black;
-            this.doubquartcheeseButton.Location = new System.Drawing.Point(9, 330);
+            this.doubquartcheeseButton.Location = new System.Drawing.Point(289, 335);
             this.doubquartcheeseButton.Name = "doubquartcheeseButton";
             this.doubquartcheeseButton.Size = new System.Drawing.Size(100, 100);
             this.doubquartcheeseButton.TabIndex = 29;
@@ -486,7 +487,7 @@ namespace FinalProjectCashRegister
             this.doubquartbltButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.doubquartbltButton.Font = new System.Drawing.Font("Corbel Light", 6.7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doubquartbltButton.ForeColor = System.Drawing.Color.Black;
-            this.doubquartbltButton.Location = new System.Drawing.Point(9, 542);
+            this.doubquartbltButton.Location = new System.Drawing.Point(289, 547);
             this.doubquartbltButton.Name = "doubquartbltButton";
             this.doubquartbltButton.Size = new System.Drawing.Size(100, 100);
             this.doubquartbltButton.TabIndex = 30;
@@ -494,12 +495,29 @@ namespace FinalProjectCashRegister
             this.doubquartbltButton.UseVisualStyleBackColor = false;
             this.doubquartbltButton.Click += new System.EventHandler(this.doubquartbltButton_Click);
             // 
+            // filetButton
+            // 
+            this.filetButton.BackColor = System.Drawing.Color.Red;
+            this.filetButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.filetButton.FlatAppearance.BorderSize = 2;
+            this.filetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.filetButton.Font = new System.Drawing.Font("Corbel Light", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filetButton.ForeColor = System.Drawing.Color.Black;
+            this.filetButton.Location = new System.Drawing.Point(183, 17);
+            this.filetButton.Name = "filetButton";
+            this.filetButton.Size = new System.Drawing.Size(100, 100);
+            this.filetButton.TabIndex = 31;
+            this.filetButton.Text = "Filet-O-Fish";
+            this.filetButton.UseVisualStyleBackColor = false;
+            this.filetButton.Click += new System.EventHandler(this.filetButton_Click);
+            // 
             // donscashRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(1080, 707);
+            this.ClientSize = new System.Drawing.Size(1321, 707);
+            this.Controls.Add(this.filetButton);
             this.Controls.Add(this.doubquartbltButton);
             this.Controls.Add(this.doubquartcheeseButton);
             this.Controls.Add(this.doubbigmacButton);
@@ -572,6 +590,7 @@ namespace FinalProjectCashRegister
         private System.Windows.Forms.Button doubbigmacButton;
         private System.Windows.Forms.Button doubquartcheeseButton;
         private System.Windows.Forms.Button doubquartbltButton;
+        private System.Windows.Forms.Button filetButton;
     }
 }
 

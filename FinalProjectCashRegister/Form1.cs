@@ -56,6 +56,8 @@ namespace FinalProjectCashRegister
         double doubquartcheeseTotal;
         double doubquartbltCost = 7.49;
         double doubquartbltTotal;
+        double filetCost = 5.19;
+        double filetTotal;
 
         //variables for the different money totals
         double subtotalTotal = 0;
@@ -195,6 +197,12 @@ namespace FinalProjectCashRegister
                 Thread.Sleep(100);
                 Refresh();
             }
+            if (filetTotal > 0)
+            {
+                receiptLabel.Text += $"\nFILET-O-FISH                  x{filetTotal} @ {filetCost.ToString("C")}";
+                Thread.Sleep(100);
+                Refresh();
+            }
             receiptLabel.Text += $"\n";
             receiptLabel.Text += $"\nSubtotal                   {subtotalTotal.ToString("C")}";
             Thread.Sleep(100);
@@ -237,7 +245,7 @@ namespace FinalProjectCashRegister
             double coffeeTotal = scoffeeTotal * scoffeeCost + mcoffeeTotal * mcoffeeCost + lcoffeeTotal * lcoffeeCost;
             double shakeTotal = sshakeTotal * sshakeCost + mshakeTotal * mshakeCost + lshakeTotal * lshakeCost;
             double friesTotal = sfriesTotal * sfriesCost + mfriesTotal * mfriesCost + lfriesTotal * lfriesCost;
-            double singburgTotal = bigmacTotal * bigmacCost + quartcheeseTotal * quartcheeseCost + quartbltTotal * quartbltCost;
+            double singburgTotal = bigmacTotal * bigmacCost + quartcheeseTotal * quartcheeseCost + quartbltTotal * quartbltCost + filetTotal * filetCost;
             double doubburgTotal = doubbigmacTotal * doubbigmacCost + doubquartcheeseTotal * doubquartcheeseCost + doubquartbltTotal * doubquartbltCost;
             subtotalTotal = coffeeTotal + drinkTotal + shakeTotal + friesTotal + singburgTotal + doubburgTotal;
             taxTotal = subtotalTotal * taxRate;
@@ -294,6 +302,7 @@ namespace FinalProjectCashRegister
             doubbigmacTotal = 0;
             doubquartcheeseTotal = 0;
             doubquartbltTotal = 0;
+            filetTotal = 0;
             changeLabel.Text = "Change:    $0.00";
             tenderedTextbox.Text = "";
             taxLabel.Text = "Tax:       $0.00";
@@ -578,6 +587,21 @@ namespace FinalProjectCashRegister
 
             player.Play();
         }
+        private void filetButton_Click(object sender, EventArgs e)
+        {
+            if (voidButton.BackColor == Color.Gray)
+            {
+                filetTotal += 1;
+            }
+            else
+            {
+                filetTotal -= 1;
+            }
+            orderDisplay();
+            SoundPlayer player = new SoundPlayer(Properties.Resources.bellSound);
+
+            player.Play();
+        }
 
         //create custom methods here
         public void orderDisplay()
@@ -657,6 +681,10 @@ namespace FinalProjectCashRegister
             if (doubquartbltTotal > 0)
             {
                 receiptLabel.Text += $"\nDouble 1/4 Pounder BLT       " + (doubquartbltTotal);
+            }
+            if (filetTotal > 0)
+            {
+                receiptLabel.Text += $"\nFilet-O-Fish                 " + (filetTotal);
             }
         }
 
